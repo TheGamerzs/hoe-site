@@ -11,7 +11,10 @@
 	useGqlCors({ credentials: "same-origin" });
 
 	const { data } = await useAsyncGql({
-		operation: "members"
+		operation: "members",
+		options: {
+			initialCache: false
+		}
 	});
 </script>
 

@@ -11,7 +11,10 @@
 
 <script lang="ts" setup>
 	const { data } = await useAsyncGql({
-		operation: "orders"
+		operation: "orders",
+		options: {
+			initialCache: false
+		}
 	});
 </script>
 
