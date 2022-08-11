@@ -1,0 +1,13 @@
+query members {
+	Members {
+		id
+		name
+		discord
+		topBadge
+		badge {
+			id
+			name
+			icon
+		}
+	}
+}
